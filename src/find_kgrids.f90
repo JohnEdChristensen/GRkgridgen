@@ -185,6 +185,8 @@ CONTAINS
     
     real(dp), pointer :: pg(:,:,:)
 
+    write(*,*) niggli_id
+
     call get_lattice_pointGroup(lat_vecs, pg, eps_=eps)
     pg_size = size(pg,3)
 

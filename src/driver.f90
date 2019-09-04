@@ -39,5 +39,6 @@ PROGRAM lat_id_driver
      point = matmul(Rinv,IRKps(i,:))
      write(4,'(F16.14,A1,F16.14,A1,F16.14,A1,I5.1)') point(1), " ",point(2), " ",point(3), " ", weights(i)
   end do
+  write(*,*) "test"
 
 end PROGRAM lat_id_driver
